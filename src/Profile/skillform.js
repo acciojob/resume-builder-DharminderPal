@@ -32,7 +32,7 @@ const SkillsForm = () => {
 
     return (
         <div className="skills-form">
-            <h2>Skills Sector</h2>
+            <h2>Add your Education Details</h2>
 
             <div className="skill-input-group">
                 <label>Skill*</label>
