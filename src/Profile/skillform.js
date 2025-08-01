@@ -32,7 +32,7 @@ const SkillsForm = () => {
 
     return (
         <div className="skills-form">
-            <h2>Add your Education Details</h2>
+            <h2>ANY</h2>
 
             <div className="skill-input-group">
                 <label>Skill*</label>
@@ -89,7 +89,7 @@ const SkillsForm = () => {
                     type="submit"
                     id="save_continue"
                     className="save-button"
-                    onClick={()=>navigate('/projects')}
+                    onClick={() => navigate('/projects')}
                 >
                     SAVE AND CONTINUE
                 </button>

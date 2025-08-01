@@ -157,7 +157,7 @@ const EducationForm = () => {
 
   return (
     <div className="education-form">
-      <h2> Education Section</h2>
+      <h2>Add your Education Details</h2>
       
       <div className="current-education">
         <input

@@ -38,7 +38,7 @@ const SocialMediaForm = () => {
         <label>Social Links *</label>
         <input
           type="url"
-          name="social"
+          name="Social"
           value={socialInput}
           onChange={(e) => setSocialInput(e.target.value)}
           placeholder="Enter social media URL"
