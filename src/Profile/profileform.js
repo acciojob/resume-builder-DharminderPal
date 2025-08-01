@@ -41,8 +41,7 @@ const ProfileForm = () => {
 
   return (
     <div className="profile-form">
-      <h2>Profile Section</h2>
-
+      <h2>RESUME GENERATOR</h2>
       <div className="image-upload">
         {personalDetails.imageUrl ? (
           <img src={personalDetails.imageUrl} alt="Profile" className="profile-image" />
@@ -60,6 +59,7 @@ const ProfileForm = () => {
       </div>
 
       <form onSubmit={handleSubmit}>
+          <h2>Add your profile details</h2>
         <div className="form-group">
           <label>First Name</label>
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />

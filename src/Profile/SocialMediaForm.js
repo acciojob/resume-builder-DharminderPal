@@ -12,6 +12,7 @@ const SocialMediaForm = () => {
   const handleAddSocial = () => {
     if (socialInput.trim()) {
       dispatch(addSocial(socialInput));
+      // console.log(socialInput); 
       setSocialInput('');
     }
   };
