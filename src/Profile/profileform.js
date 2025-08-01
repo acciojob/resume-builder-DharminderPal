@@ -62,7 +62,7 @@ const ProfileForm = () => {
           <h2>Add your profile details</h2>
         <div className="form-group">
           <label>First Name</label>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+          <input type="text" name="fname" value={formData.name} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label>Last Name</label>
