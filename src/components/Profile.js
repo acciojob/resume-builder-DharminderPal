@@ -2,10 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   name: "",
+  lname:"",
   email: "",
   phone: "",
   address: "",
   imageUrl: "",
+
 };
 
 export const profileSlice = createSlice({
@@ -15,6 +17,11 @@ export const profileSlice = createSlice({
     setName: (state, action) => {
       state.name = action.payload;
     },
+
+    setLname: (state, action) => {
+  state.lname = action.payload;
+}
+,
     setEmail: (state, action) => {
       state.email = action.payload;
     },
@@ -45,3 +52,4 @@ export const {
 } = profileSlice.actions;
 
 export default profileSlice.reducer;
+  

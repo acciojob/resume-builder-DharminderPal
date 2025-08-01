@@ -15,10 +15,16 @@
 import { configureStore } from '@reduxjs/toolkit';
 import profileReducer from '../components/Profile'; 
 import educationReducer from '../components/Education'; 
+import skillsReducer from '../components/Skills'; 
+import projectsReducer from '../components/Projects';
+import socialReducer from '../components/SocialMedia';
 const store = configureStore({
   reducer: {
     profile: profileReducer,
-    education: educationReducer
+    education: educationReducer,
+  skills: skillsReducer,
+  projects: projectsReducer,
+  social: socialReducer
   }
 });
 export default store;

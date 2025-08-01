@@ -1,8 +1,11 @@
+
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom'; // Changed from useHistory to useNavigate
 import { updateProfile, updateProfileImage } from '../components/Profile';
 
 const ProfileForm = () => {
+  const navigate = useNavigate(); // Using useNavigate instead of useHistory
   const dispatch = useDispatch();
   const personalDetails = useSelector((state) => state.profile);
 
@@ -33,11 +36,13 @@ const ProfileForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(updateProfile(formData));
+    navigate("/education"); // Changed from history.push to navigate
   };
 
   return (
     <div className="profile-form">
-      <h2>Personal Details</h2>
+      <h2>Profile Section</h2>
+
       <div className="image-upload">
         {personalDetails.imageUrl ? (
           <img src={personalDetails.imageUrl} alt="Profile" className="profile-image" />
@@ -53,13 +58,14 @@ const ProfileForm = () => {
         />
         <label htmlFor="profileImage" className="upload-button">Choose Profile Image</label>
       </div>
+
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Name</label>
+          <label>First Name</label>
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />
         </div>
-          <div className="form-group">
-          <label>lname</label>
+        <div className="form-group">
+          <label>Last Name</label>
           <input type="text" name="lname" value={formData.lname} onChange={handleChange} required />
         </div>
         <div className="form-group">
@@ -67,14 +73,15 @@ const ProfileForm = () => {
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label>Phone</label>
+          <label>Phone Number</label>
           <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label>Address</label>
           <textarea name="address" value={formData.address} onChange={handleChange} rows="3" />
         </div>
-        <button type="submit" className="save-button">Save Details</button>
+
+        <button type="submit" className="save-button">Save and Continue</button>
       </form>
     </div>
   );
