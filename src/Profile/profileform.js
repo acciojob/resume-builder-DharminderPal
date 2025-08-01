@@ -78,7 +78,7 @@ const ProfileForm = () => {
         </div>
         <div className="form-group">
           <label>Address</label>
-          <textarea name="address" value={formData.address} onChange={handleChange} rows="3" />
+          <input type="text" name="address" value={formData.address} onChange={handleChange} rows="3" />
         </div>
 
         <button type="submit" className="save-button">Save and Continue</button>
