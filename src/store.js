@@ -1,5 +1,5 @@
 import { legacy_createStore as createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
+import {thunk} from "redux-thunk";
 import rootReducer from "./Reducer";
 
 const initialState = {};
@@ -14,7 +14,7 @@ const composeEnhancers =
 const store = createStore(
   rootReducer,
   initialState,
-  composeEnhancers(applyMiddleware(...middleware))
+ applyMiddleware(...middleware) 
 );
 
 export default store;
