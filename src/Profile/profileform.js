@@ -63,7 +63,7 @@
           <div className="form-group">
             <label>First Name</label>
             <input type="text" name="fname" value={formData.name} onChange={handleChange} required />
-          </div>
+          </div> 
           <div className="form-group">
             <label>Last Name</label>
             <input type="text" name="lname" value={formData.lname} onChange={handleChange} required />
