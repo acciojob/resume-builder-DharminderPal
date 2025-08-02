@@ -205,7 +205,7 @@ const EducationForm = () => {
 
       {entries?.length > 0 ? (
         <div className="education-list">
-          <h3>Your Education Entries:</h3>
+          <h3>Add your Education Details</h3>
           {entries.map((edu, index) => (
             <div key={`edu-${index}`} className="education-item">
               <p>{edu?.name || 'N/A'} - {edu?.completionYear || 'N/A'}</p>
