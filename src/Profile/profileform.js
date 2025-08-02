@@ -10,7 +10,7 @@
     const personalDetails = useSelector((state) => state.profile);
 
     const [formData, setFormData] = useState({
-      name: personalDetails.name || "",
+      fname: personalDetails.fname || "",
       lname: personalDetails.lname || "",
       email: personalDetails.email || "",
       phone: personalDetails.phone || "",
@@ -62,7 +62,7 @@
             <h2>Add your profile details</h2>
           <div className="form-group">
             <label>First Name</label>
-            <input type="text" name="fname" value={formData.name} onChange={handleChange} required />
+            <input type="text" name="fname" value={formData.fname} onChange={handleChange} required />
           </div> 
           <div className="form-group">
             <label>Last Name</label>

@@ -199,7 +199,7 @@ const EducationForm = () => {
           onClick={handleAdd}
           disabled={!current?.name || !current?.completionYear}
         >
-          ADD EDUCATION
+          Add your Education Details
         </button>
       </div>
 
