@@ -31,10 +31,10 @@ const SkillsForm = () => {
     };
 
     return (
-        <div className="skills-form">
+        <div >
             <h2>ANY</h2>
 
-            <div className="skill-input-group">
+            <div >
                 <label>Skill*</label>
                 <input
                     type="text"
