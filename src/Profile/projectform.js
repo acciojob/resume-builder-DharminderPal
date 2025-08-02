@@ -47,8 +47,8 @@ const ProjectsForm = () => {
   };
 
   return (
-    <div className="projects-form">
-      <h2>Add your Mini Projects</h2>
+    <div >
+      <p>Add your Mini Projects</p>
       
       <div className="project-input-group">
         <div className="form-group">
